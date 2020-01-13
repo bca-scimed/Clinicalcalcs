@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- Jumbotron below -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Clinical and Medical Calculations</h1>
+            <h3 class="lead">Several examples below</h3>
+        </div>
+    </div>
+      <!-- end of jumbotron -->
+
+  </head>
+
+  <body>
+   <div class="container">
+       <div class="row">
+
+        <!-- BMI calculator below -->
+           <div class="col-sm-6 border border-dark">
+                <h1>BMI Calculator</h1>
+                <br>
+                <h3>Input weight and height to receive BMI</h3>
+                <br>
+                <p>Weight (kg): <input id="weightinput" type="text"/></p>
+                <br>
+                <p>Height (cm): <input id="heightinput" type="text"/></p>
+                <br>
+                <p><input id="bmibutton" type="button" value="Calculate BMI" onclick="BMI()" />
+                </p>
+                <p id="bmiresult">Your result: </p>  
+           </div>
+
+<!-- CrCl calculator below, will need 4 inputs (gender, weight, age, sCr -->
+          <div class="col-sm-6 border border-dark">
+            <h1>Creatinine Clearance Calculator</h1>
+            <br>
+            <h3>Input data for creatinine clearance (CrCl)</h3>
+            <br>
+            <p>Age (years): <input id="ageinput" type="text" /></p>
+            <br>
+            <p>Gender (M/F): <input id="genderinput" type="text" /></p>
+            <br>
+            <p>Weight (kg): <input id="weightinput2" type="text" /></p>
+            <br>
+            <p>Serum creatinine (mg/dL): <input id="sCrinput" type="text" /></p>
+            <br>
+            <p><input id="crclbutton" type="button" value="Calculate CrCl" onclick="CrCl()" />
+            </p>
+            <p id="finalCrCl" id="finalCrClf">Your Creatinine Clearance (CrCl): </p>
+          </div>
+
+  <!-- end of row div below -->
+      </div>
+
+  <!-- end of container div below -->
+   </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
