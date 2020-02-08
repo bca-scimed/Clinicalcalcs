@@ -25,7 +25,7 @@
        <div class="row">
 
         <!-- BMI calculator below -->
-           <div class="col-sm-6 border border-dark">
+           <div id="bmicalculator" class="col-sm-6 border border-dark">
                 <h1>BMI Calculator</h1>
                 <br>
                 <h3>Input weight and height to receive BMI</h3>
@@ -40,7 +40,7 @@
            </div>
 
 <!-- CrCl calculator below, will need 4 inputs (gender, weight, age, sCr -->
-          <div class="col-sm-6 border border-dark">
+          <div id="crclcalculator" class="col-sm-6 border border-dark">
             <h1>Creatinine Clearance Calculator</h1>
             <br>
             <h3>Input data for creatinine clearance (CrCl)</h3>
@@ -55,11 +55,107 @@
             <br>
             <p><input id="crclbutton" type="button" value="Calculate CrCl" onclick="CrCl()" />
             </p>
-            <p id="finalCrCl" id="finalCrClf">Your Creatinine Clearance (CrCl): </p>
+            <p id="finalCrCl">Your Creatinine Clearance (CrCl): </p>
           </div>
 
-  <!-- end of row div below -->
+<!-- end of row div below -->
       </div>
+<br>
+<!-- start of new row div -->
+<div class="row">
+
+  <!-- new column below, drug side effects output based on drug name input -->
+  <div id="sideeffects" class="col-sm-6 border border-dark">
+    <h1>Drug Side Effects</h1>
+    <br>
+    <h3>Input generic drug name below</h3>
+    <br>
+    <p>Drug name (generic): <input id="userDrug" type="text" /></p>
+    <br>
+    <p><input id="sidefxbutton" type="button" value="Side effects" onclick="drugSE()" /></p>
+    <br>
+    <p id="drugname">Side effects of </p>
+  </div>
+
+<!-- new column below -->
+<div class="col-sm-6 border border-dark">
+  <h1>Antibiotic Dosing calculator</h1>
+  <h3>Not all antibiotics, just pick 1-2</h3>
+</div>
+
+</div>
+<br>
+<!-- start of new row div -->
+<div class="row">
+
+  <!-- new column below, drug side effects output based on drug name input -->
+  <div id="vaccineinfo" class="col-sm-12 border border-dark">
+    <h1>Vaccine Information</h1>
+    <h4 id="vaccinehead">Below is selected information for some common vaccines and the diseases they protect against</h4>
+    <br>
+    <table id="vaccinetable" class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Vaccine name</th>
+          <th scope="col">Protects against</th>
+          <th scope="col">Other info</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">DTaP</th>
+          <td>Diphtheria, Tetanus, Pertussis</td>
+          <td>DTaP is only for children younger than 7 years old</td>
+        </tr>
+        <tr>
+          <th scope="row">Hib</th>
+          <td><i>Haemophilus influenzae</i> type b</td>
+          <td>Hib vaccine usually requires 3 to 4 doses</td>
+        </tr>
+        <tr>
+          <th scope="row">MMR</th>
+          <td>Measles, Mumps, and
+            Rubella</td>
+          <td>MMR vaccinations will protect most people for life</td>
+        </tr>
+        <tr>
+          <th scope="row">HPV</th>
+          <td>Human Papillomavirus</td>
+          <td>Most HPV infections self-resolve within 2 years</td>
+        </tr>
+        <tr>
+          <th scope="row">Influenza</th>
+          <td>Flu</td>
+          <td>Thousands of people die from flu in the US each year</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+  </div>
+</div>
+<br>
+
+<!-- start of new row div -->
+<div class="row">
+
+  <!-- new column below, hypertension drug selector -->
+  <div class="col-sm-12 border border-dark">
+    <h1>Hypertension Drug Selector</h1>
+    <br>
+    <h3>There are generally four different drug classes to choose from when starting antihypertensive treatment</h3>
+    <br>
+   <p>Intro about picking between four classes of drugs</p>
+   <p>Then have a choice selector algorithm</p>
+
+
+
+
+  </div>
+</div>
+<br>
 
   <!-- end of container div below -->
    </div>
