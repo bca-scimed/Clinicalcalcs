@@ -30,13 +30,26 @@ const CrCl = () => {
     let finalCrClf = Math.floor(calcone / calctwo) * 0.85;
 
     // if else statement to print M or F value
-    if(userGender === "M" || "Male") {
-        document.getElementById("finalCrCl").innerHTML = "Since you're male, your CrCl is " + finalCrCl;
-    } else if(userGender === "F" || "Female") {
-        document.getElementById("finalCrClf").innerHTML = "Since you're female, your CrCl is " + finalCrClf;
+    if(userGender === "M") {
+        document.getElementById("finalCrCl").innerHTML = "Since you're male, your CrCl is " + finalCrCl + " (mL/min)";
+    } else if(userGender === "F") {
+        document.getElementById("finalCrCl").innerHTML = "Since you're female, your CrCl is " + Math.floor(finalCrClf) + " (mL/min)";
     } else {
         // error message
         document.getElementById("finalCrCl").innerHTML = "Oops!, something went wrong."
+    }
+
+} 
+
+// drug name side effects below
+// as of 2/21/20, only works for sertraline
+const drugSE = () => {
+    let drugName = document.getElementById("userDrug").value;
+    if(drugName === "sertraline") {
+        document.getElementById("drugname").innerHTML = "Side effects of " + drugName + " include drowsiness, insomnia, and loss of appetite."
+    } else {
+        // error message
+        document.getElementById("drugname").innerHTML = "Oops!, something went wrong."
     }
 
 }

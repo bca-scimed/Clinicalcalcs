@@ -13,7 +13,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Clinical and Medical Calculations</h1>
-            <h3 class="lead">Several examples below</h3>
+            <h3 class="lead">Some examples below</h3>
         </div>
     </div>
       <!-- end of jumbotron -->
@@ -37,6 +37,10 @@
                 <p><input id="bmibutton" type="button" value="Calculate BMI" onclick="BMI()" />
                 </p>
                 <p id="bmiresult">Your result: </p>  
+                <br>
+                <p>A note about BMI: it can be used to predict potential health problems, but is not diagnostic.
+                  BMI does have limitations and may not be appropriate for all patients, such as athletes (weight lifters) or pregnant patients.
+                </p>
            </div>
 
 <!-- CrCl calculator below, will need 4 inputs (gender, weight, age, sCr -->
@@ -56,6 +60,10 @@
             <p><input id="crclbutton" type="button" value="Calculate CrCl" onclick="CrCl()" />
             </p>
             <p id="finalCrCl">Your Creatinine Clearance (CrCl): </p>
+            <br>
+            <p>A note about creatinine clearance: it is only an estimation of renal function, and may not be
+              appropriate for all patients. There is a more accurate way to determine renal function, a 24-hr urine collection (for those with the resources and determination).
+            </p>
           </div>
 
 <!-- end of row div below -->
@@ -65,6 +73,7 @@
 <div class="row">
 
   <!-- new column below, drug side effects output based on drug name input -->
+  <!-- only works for sertraline right now, can be expanded to include other drugs -->
   <div id="sideeffects" class="col-sm-6 border border-dark">
     <h1>Drug Side Effects</h1>
     <br>
@@ -88,7 +97,7 @@
 <!-- start of new row div -->
 <div class="row">
 
-  <!-- new column below, drug side effects output based on drug name input -->
+  <!-- new column below, vaccine information table -->
   <div id="vaccineinfo" class="col-sm-12 border border-dark">
     <h1>Vaccine Information</h1>
     <h4 id="vaccinehead">Below is selected information for some common vaccines and the diseases they protect against</h4>
@@ -151,11 +160,23 @@
    <p>Then have a choice selector algorithm</p>
 
 
-
-
   </div>
 </div>
 <br>
+
+<!-- Opioid dose calculator below -->
+<div class="row">
+  <div class="col-sm-12 border border-dark">
+    <h1>Opioid dose calculator</h1>
+    <h5>It should come as no surprise that higher doses of opioids are
+      also associated with a higher risk of overdose and death. Calculating
+      the total daily dose of opioids can identify patients that are at a higher risk of overdose and death -- 
+      and they can be monitored more closely, prescribed naloxone, or have their dose reduced.
+    </h5>
+  </div>
+</div>
+<br>
+
 
   <!-- end of container div below -->
    </div>
